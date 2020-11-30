@@ -9,6 +9,8 @@ def choose():
     print('The word has ', len(random_word),' letters')
     return random_word
 
+chosen = choose()   #choosing the secret word
+
 def position():
     '''finds all the positions, in the secret word, the guessed letter is found'''
     indexes = [pos + 1 for pos in range(len(chosen)) if chosen[pos] == guess]
@@ -23,8 +25,6 @@ def word_status():
     for each in position(): temp[each] = guess
     word = ''.join(temp)
     print(word)
-
-chosen = choose()   #choosing the secret word
 
 #loop to give the player 10 chances to dodge the norse
 for chances in range(10):
