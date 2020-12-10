@@ -35,6 +35,8 @@ for chances in range(10):
          for each in position(): temp[each] = guess
          word = ''.join(temp)
          print(word)
+		 word = 
+		 print(each for each in chosen if each == guess else '-')
 
     if guess in chosen:
         print('"{}" is the {}th letter in the word'.format(guess, position()))
