@@ -18,7 +18,7 @@ def position():
     
 chosen = choose() # selecting the secret word
 
-#loop to give the player 10 chances to dodge the norse
+#loop to give the player 10 chances to dodge the noose
 for chances in range(10):
     if word == '-' + chosen:       # if you win
         print('You get to WALK AWAY from the gibbet. *__*')
@@ -31,7 +31,7 @@ for chances in range(10):
          shows correctly guessed letters in their correct position(s) in the secret word'''
          global word
          temp = list(word)
-         del temp[len(chosen) + 1:]
+         del temp[len(chosen) + 1:] #removing the extra "---"in word
          for each in position(): temp[each] = guess
          word = ''.join(temp)
          print(word)
