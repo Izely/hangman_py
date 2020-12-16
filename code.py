@@ -36,7 +36,7 @@ for chances in range(10):
          word = ''.join(temp)
          print(word)
 	 #word = [(each for each in chosen if each == guess else '-')]
-	 #print(word) # this is as good as using word
+	 #print(word)
 
     if guess in chosen:
         print('"{}" is the {}th letter in the word'.format(guess, position()))
