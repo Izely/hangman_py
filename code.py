@@ -29,14 +29,14 @@ for chances in range(10):
     def word_status():
          '''visual status of progress
          shows correctly guessed letters in their correct position(s) in the secret word'''
-         global word
-         temp = list(word)
+         #global word
+         '''temp = list(word)
          del temp[len(chosen) + 1:] #removing the extra "---"in word
          for each in position(): temp[each] = guess
          word = ''.join(temp)
-         print(word)
-	 #word = (each for each in chosen if each == guess else '-')
-	 #print(each for each in chosen if each == guess else '-') # this is as good as using word
+         print(word)'''
+	 word = [(each for each in chosen if each == guess else '-')]
+	 print("each for each in chosen if each == guess else '-'", word) # this is as good as using word
 
     if guess in chosen:
         print('"{}" is the {}th letter in the word'.format(guess, position()))
