@@ -33,10 +33,10 @@ for chances in range(10):
          temp = list(word.upper
 		    ())
          del temp[len(chosen) + 1:] #removing the extra "---"in word
-         for each in position(): temp[each] = guess
+         for each in position(): temp[each] = guess.upper()
          word = ''.join(temp)
          print(word)
-	 #word = [(each for each in chosen if each == guess else '-')]
+	 #word = [(each for each in chosen if each == guess else: '-')]
 	 #print(word)
 
     if guess in chosen:
