@@ -30,7 +30,8 @@ for chances in range(10):
          '''visual status of progress
          shows correctly guessed letters in their correct position(s) in the secret word'''
          global word
-         temp = list(word)
+         temp = list(word.upper
+		    ())
          del temp[len(chosen) + 1:] #removing the extra "---"in word
          for each in position(): temp[each] = guess
          word = ''.join(temp)
