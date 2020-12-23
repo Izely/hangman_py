@@ -48,5 +48,5 @@ for chances in range(10):
 if hang == True:       # if you get to hang
     print('   WELL! There"s the chance of an afterlife ? -_-')
 
-
+#Property of Izely.Co
 
